@@ -46,7 +46,16 @@ aquaSecret:
   # Enter the enforcer token in "clear-text" format without quotes generated from the Console UI #
   kubeEnforcerToken: ke-token-cleartext-noquotes # POV to Update. E.g. 2af8dbb2-f1a2-4212-b343-5f8cfce93a5e
 
-
+resources: {}
+  # Note: For recommendations please check the official sizing guide.
+  # requests:
+  #   cpu: 250m
+  #   memory: 0.2Gi
+  # limits:
+  #   cpu: 500m
+  #   memory: 1.5Gi
+  
+  
 
 ### ############# ###
 ### Aqua Enforcer ###
@@ -86,3 +95,12 @@ enforcer:
     repository: enforcer
     tag: "2022.4.142"
     pullPolicy: Always
+    
+  resources: { }
+    # Note: For recommendations please check the official sizing guide.
+    # requests:
+    #   cpu: 350m
+    #   memory: 0.512Gi
+    # limits:
+    #   cpu: 1500m
+    #   memory: 1.5Gi
