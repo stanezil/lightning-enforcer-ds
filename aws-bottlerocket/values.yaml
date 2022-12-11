@@ -31,7 +31,7 @@ serviceAccount:
 # Kube-Enforcer Image
 image:
   repository: "kube-enforcer"
-  tag: "2022.4.142"
+  tag: "2022.4"
   pullPolicy: Always
 
 # Display a custom cluster name in the infrastructure tab of Aqua Enterprise
@@ -93,7 +93,7 @@ enforcer:
 
   image:
     repository: enforcer
-    tag: "2022.4.142"
+    tag: "2022.4"
     pullPolicy: Always
     
   resources: { }
