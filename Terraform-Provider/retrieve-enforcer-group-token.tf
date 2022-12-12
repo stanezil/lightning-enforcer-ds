@@ -1,6 +1,6 @@
-# Retrieve Default Aqua Enforcer Group Token
+# Retrieve created Aqua Enforcer Group Token
 data "aquasec_enforcer_groups" "group" {
-  group_id = "default" # Do not change - Lightning/Express Mode utilizes the Default Enforcer Group
+  group_id = "test-1" # POV to Update --> Fill with created Enforcer group name 
 }
 
 output "enforcer_group_details" {
@@ -8,9 +8,9 @@ output "enforcer_group_details" {
 }
 
 
-# Retrieve Default Kube Enforcer Group Token
+# Retrieve created Kube Enforcer Group Token
 data "aquasec_enforcer_groups" "group-kube_enforcer" {
-  group_id = "default kube enforcer group" # Do not change - Lightning/Express Mode utilizes the Default Kube Enforcer Group
+  group_id = "test-1-ke" # POV to Update --> Fill with created Kube Enforcer group name 
 }
 
 output "kube_enforcer_group_details" {
